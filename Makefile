@@ -1,6 +1,6 @@
-CC = g++
+CC = g++ -std=c++11
 CFLAGS = -c -Wall
-LDFLAGS = -l:libcurlpp.a -lcurl
+LDFLAGS = -L. -l:libcurlpp.a -lcurl
 IFLAGS = -I./include/
 SOURCES = bot.cpp json.hpp
 OBJECTS = $(SOURCES:.cpp=.o)

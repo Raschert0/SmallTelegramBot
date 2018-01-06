@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -c -Wall
 LDFLAGS = -l:libcurlpp.a -lcurl
-IFLAGS = -I.
+IFLAGS = -I./include/
 SOURCES = bot.cpp json.hpp
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE = bot
